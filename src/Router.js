@@ -1,13 +1,16 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route, useHistory } from 'react-router-dom'
 import AdminLayout from './layout/AdminLayout'
+import KhachHang from './component/KhachHang'
 
-const Router = () => {
+const Router = (props) => {
     return (
         <BrowserRouter>
             <Switch>
                 <Route exact path='/'>
-                    <AdminLayout></AdminLayout>
+                    <AdminLayout {...props}>
+                        <KhachHang/>
+                    </AdminLayout>
                 </Route>
             </Switch>
         </BrowserRouter >

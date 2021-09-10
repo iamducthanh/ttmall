@@ -13,6 +13,16 @@ const AdminLayout = (props) => {
             </div>
             <div id="layout-wrapper">
                 <Header></Header>
+                <div className="main-content">
+                    {props.children}
+                    <footer className="footer text-center">
+                        ©
+                        Foxia <span className="d-none d-sm-inline-block">
+                            - Crafted with <i className="mdi mdi-heart text-danger" /> by Themesbrand.</span>
+                    </footer>
+
+                </div>
+
             </div>
 
 

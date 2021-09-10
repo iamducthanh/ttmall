@@ -8,7 +8,7 @@ const Header = () => {
                     <div className="navbar-brand-box d-block d-lg-none">
                         <a href="index.html" className="logo logo-light">
                             <span className="logo-sm">
-                                <img src="assets/img/logo-sm.png" alt height={22} />
+                                <img src="assets/img/logo-sm.png" height={22} />
                             </span>
                         </a>
                     </div>
@@ -21,24 +21,24 @@ const Header = () => {
                         </li>
                         <li className="list-inline-item">
                             <div className="dropdown d-none d-lg-block">
-                                <button type="button" className="btn header-item waves-effect" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <img className="me-2" src="assets/img/us_flag.jpg" alt="Header Language" height={14} />
+                                <button type="button" className="btn header-item waves-effect" data-bs-toggle="dropdown">
+                                    <img className="me-2" src="assets/img/us_flag.jpg" height={14} />
                                     United States <span className="mdi mdi-chevron-down" />
                                 </button>
                                 <div className="dropdown-menu dropdown-menu-end">
-                                    <a href="javascript:void(0);" className="dropdown-item notify-item">
-                                        <img src="assets/img/french_flag.jpg" alt="user-image" className="me-1" height={12} />
+                                    <a href="#" className="dropdown-item notify-item">
+                                        <img src="assets/img/french_flag.jpg" className="me-1" height={12} />
                                         <span className="align-middle"> French </span>
                                     </a>
-                                    <a href="javascript:void(0);" className="dropdown-item notify-item">
-                                        <img src="assets/img/germany_flag.jpg" alt="user-image" className="me-1" height={12} /> <span className="align-middle"> German </span>
+                                    <a href="#" className="dropdown-item notify-item">
+                                        <img src="assets/img/germany_flag.jpg" className="me-1" height={12} /> <span className="align-middle"> German </span>
                                     </a>
-                                    <a href="javascript:void(0);" className="dropdown-item notify-item">
-                                        <img src="assets/img/italy_flag.jpg" alt="user-image" className="me-1" height={12} />
+                                    <a href="#" className="dropdown-item notify-item">
+                                        <img src="assets/img/italy_flag.jpg" className="me-1" height={12} />
                                         <span className="align-middle"> Italian </span>
                                     </a>
-                                    <a href="javascript:void(0);" className="dropdown-item notify-item">
-                                        <img src="assets/img/spain_flag.jpg" alt="user-image" className="me-1" height={12} />
+                                    <a href="#" className="dropdown-item notify-item">
+                                        <img src="assets/img/spain_flag.jpg" className="me-1" height={12} />
                                         <span className="align-middle"> Spanish </span>
                                     </a>
                                 </div>
@@ -61,7 +61,7 @@ const Header = () => {
                         </button>
                     </div>
                     <div className="dropdown d-inline-block ms-2">
-                        <button type="button" className="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button type="button" className="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown" data-bs-toggle="dropdown">
                             <i className="mdi mdi-bell-outline" />
                             <span className="badge bg-danger rounded-pill">3</span>
                         </button>
@@ -74,7 +74,7 @@ const Header = () => {
                                 </div>
                             </div>
                             <div data-simplebar style={{ maxHeight: 230 }}>
-                                <a href className="text-reset notification-item">
+                                <a className="text-reset notification-item">
                                     <div className="d-flex">
                                         <div className="avatar-xs me-3">
                                             <span className="avatar-title bg-success rounded-circle font-size-16">
@@ -89,7 +89,7 @@ const Header = () => {
                                         </div>
                                     </div>
                                 </a>
-                                <a href className="text-reset notification-item">
+                                <a className="text-reset notification-item">
                                     <div className="d-flex">
                                         <div className="avatar-xs me-3">
                                             <span className="avatar-title bg-danger rounded-circle font-size-16">
@@ -104,7 +104,7 @@ const Header = () => {
                                         </div>
                                     </div>
                                 </a>
-                                <a href className="text-reset notification-item">
+                                <a className="text-reset notification-item">
                                     <div className="d-flex">
                                         <div className="avatar-xs me-3">
                                             <span className="avatar-title bg-info rounded-circle font-size-16">
@@ -119,7 +119,7 @@ const Header = () => {
                                         </div>
                                     </div>
                                 </a>
-                                <a href className="text-reset notification-item">
+                                <a className="text-reset notification-item">
                                     <div className="d-flex">
                                         <div className="avatar-xs me-3">
                                             <span className="avatar-title bg-success rounded-circle font-size-16">
@@ -134,7 +134,7 @@ const Header = () => {
                                         </div>
                                     </div>
                                 </a>
-                                <a href className="text-reset notification-item">
+                                <a className="text-reset notification-item">
                                     <div className="d-flex">
                                         <div className="avatar-xs me-3">
                                             <span className="avatar-title bg-warning rounded-circle font-size-16">
@@ -151,15 +151,15 @@ const Header = () => {
                                 </a>
                             </div>
                             <div className="p-2 border-top">
-                                <a className="btn btn-sm btn-link font-size-14 btn-block" href="javascript:void(0)">
+                                <a className="btn btn-sm btn-link font-size-14 btn-block" href="#">
                                     View all
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div className="dropdown d-inline-block ms-2">
-                        <button type="button" className="btn header-item waves-effect" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img className="rounded-circle header-profile-user" src="assets/img/avatar-6.jpg" alt="Header Avatar" />
+                        <button type="button" className="btn header-item waves-effect" id="page-header-user-dropdown" data-bs-toggle="dropdown">
+                            <img className="rounded-circle header-profile-user" src="assets/img/avatar-6.jpg" />
                             <span className="d-none d-md-inline-block ms-1">Donald T. <i className="mdi mdi-chevron-down" />
                             </span>
                         </button>
@@ -187,10 +187,10 @@ const Header = () => {
                         <div className="navbar-brand-box d-none d-lg-block">
                             <a href="index.html" className="logo logo-light">
                                 <span className="logo-sm">
-                                    <img src="assets/img/logo-sm.png" alt height={22} />
+                                    <img src="assets/img/logo-sm.png" height={22} />
                                 </span>
                                 <span className="logo-lg">
-                                    <img src="assets/img/logo.png" alt height={20} />
+                                    <img src="assets/img/logo.png" height={20} />
                                 </span>
                             </a>
                         </div>
@@ -364,7 +364,7 @@ const Header = () => {
                                                     <a href="layouts-icon-sidebar.html" className="dropdown-item">Icon
                                                         Sidebar</a>
                                                     <a href="layouts-boxed.html" className="dropdown-item">Boxed Layout</a>
-                                                    <a href className="dropdown-item">Colored Sidebar</a>
+                                                    <a className="dropdown-item">Colored Sidebar</a>
                                                 </div>
                                             </div>
                                             <div className="dropdown">
