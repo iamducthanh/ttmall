@@ -1,16 +1,32 @@
 import React from 'react'
 
 const DTGH = () => {
+    let tabDTGH = document.getElementsByClassName("tabDTGH");
+    let headDTGH = document.getElementsByClassName("menuTabDTGH");
+    function onTabDTGH(index) {
+        for (let i = 0; i < tabDTGH.length; i++) {
+            if (i == index) {
+                headDTGH[i].style.borderBottom = '2px solid #564ab1'
+                tabDTGH[i].style.display = 'unset';
+            } else {
+                headDTGH[i].style.borderBottom = '0px'
+                tabDTGH[i].style.display = 'none';
+            }
+        }
+    }
+    function closeModalDTGH() {
+        document.getElementById('tabDTGH').style.display = 'none'
+    }
     return (
         <div className="swal2-container swal2-center swal2-backdrop-show" style={{ overflowY: 'auto', display: 'none' }} id="tabDTGH">
             <div aria-labelledby="swal2-title" id="thanh1" aria-describedby="swal2-content" className="swal2-popup swal2-modal swal2-show" tabIndex={-1} role="dialog" aria-live="assertive" aria-modal="true" style={{ display: 'flex', width: '80%' }}>
-                <button type="button" className="swal2-close" onclick="closeModalDTGH()">×</button>
+                <button type="button" className="swal2-close" onClick={closeModalDTGH}>×</button>
                 <div className="row" style={{ textAlign: 'center', marginBottom: 20 }}>
-                    <div className="col-lg-2 menuTabDTGH" onclick="onTabDTGH(0);" id="menuTab1">
+                    <div className="col-lg-2 menuTabDTGH" onClick={onTabDTGH.bind(this, 0)} id="menuTab1">
                         Thông tin</div>
-                    <div className="col-lg-3 menuTabDTGH" onclick="onTabDTGH(1);">Lịch sử giao hàng
+                    <div className="col-lg-3 menuTabDTGH" onClick={onTabDTGH.bind(this, 1)}>Lịch sử giao hàng
                     </div>
-                    <div className="col-lg-3 menuTabDTGH" onclick="onTabDTGH(2);">Phí cần trả đối tác giao hàng
+                    <div className="col-lg-3 menuTabDTGH" onClick={onTabDTGH.bind(this, 2)}>Phí cần trả đối tác giao hàng
                     </div>
                 </div>
                 <div className="tabDTGH">
@@ -81,7 +97,7 @@ const DTGH = () => {
                         <button className="btn btn-primary" style={{ backgroundColor: '#db4e65', border: 'none' }}><i className="fas fa-user-slash" />  Xóa</button>
                     </div>
                 </div>
-                <div className="tabDTGH">
+                <div className="tabDTGH" style={{display: 'none'}}>
                     <table className="table table-striped table-bordered dt-responsive nowrap" style={{ borderCollapse: 'collapse', borderSpacing: 0, width: '100%' }}>
                         <thead>
                             <tr>
@@ -110,7 +126,7 @@ const DTGH = () => {
                         <button className="btn btn-primary" style={{ backgroundColor: '#656565', border: 'none' }}><i className="fas fa-file-export" />  Xuất file</button>
                     </div>
                 </div>
-                <div className="tabDTGH">
+                <div className="tabDTGH" style={{display: 'none'}}>
                     <table className="table table-striped table-bordered dt-responsive nowrap" style={{ borderCollapse: 'collapse', borderSpacing: 0, width: '100%' }}>
                         <thead>
                             <tr>

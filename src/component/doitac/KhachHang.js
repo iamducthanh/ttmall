@@ -36,7 +36,7 @@ const KhachHang = () => {
                                             <a className="has-arrow waves-effect">
                                                 <span> Nhóm khách hàng </span>
                                             </a>
-                                            <ul id="tesssss" className="sub-menu" style={{ padding: '0 10px 0 20px' }}>
+                                            <ul className="sub-menu" style={{ padding: '0 10px 0 20px' }}>
                                                 <div className="row">
                                                     <div className="col-lg-10">
                                                         <select className="form-select myInputNoBorder">
