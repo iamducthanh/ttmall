@@ -5,6 +5,7 @@ import KhachHang from './component/doitac/KhachHang'
 import DoiTacGiaoHang from './component/doitac/DoiTacGiaoHang'
 import TongQuan from './component/tongquan/TongQuan'
 import NhaCungCap from './component/doitac/NhaCungCap'
+import VanDon from './component/hanghoa/VanDon'
 
 const Router = (props) => {
     return (
@@ -30,6 +31,12 @@ const Router = (props) => {
                         <NhaCungCap/>
                     </AdminLayout>
                 </Route>
+                <Route exact path='/van-don'>
+                    <AdminLayout {...props}>
+                        <VanDon/>
+                    </AdminLayout>
+                </Route>
+                
             </Switch>
         </BrowserRouter >
     )
