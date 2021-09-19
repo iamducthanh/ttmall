@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, useParams } from 'react-router-dom'
 
 const Header = () => {
     return (
@@ -198,23 +199,17 @@ const Header = () => {
                             <div className="collapse navbar-collapse" id="topnav-menu-content">
                                 <ul className="navbar-nav">
                                     <li className="nav-item">
-                                        <a className="nav-link" href="index.html">
+                                        <Link className="nav-link" to="/">
                                             <i className="dripicons-meter me-2" />Tổng quan
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="nav-item dropdown">
                                         <a className="nav-link dropdown-toggle arrow-none" href="#" id="topnav-user-Interface" role="button">
                                             <i className="dripicons-briefcase me-2" />Hàng hóa
                                             <div className="arrow-down" />
                                         </a>
-                                        <div className="dropdown-menu mega-dropdown-menu dropdown-mega-menu-xl dropdown-menu-start" aria-labelledby="topnav-user-Interface">
-                                            <div className="row">
-                                                <div className="col-lg-4">
-                                                    <div>
-                                                        <a href="hanghoa.html" className="dropdown-item">Hàng hóa</a>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div className="dropdown-menu" aria-labelledby="topnav-advanced-ui">
+                                            <Link to="/hang-hoa" className="dropdown-item">Hàng hóa</Link>
                                         </div>
                                     </li>
                                     <li className="nav-item dropdown">
@@ -309,16 +304,17 @@ const Header = () => {
                                     </li>
                                     <li className="nav-item dropdown">
                                         <a className="nav-link dropdown-toggle arrow-none" href="#" id="topnav-advanced-ui" role="button">
-                                            <i className="far fa-user" /> Đối tác
+                                            <i className="fas fa-hands-helping"/> Đối tác
                                             <div className="arrow-down" />
                                         </a>
                                         <div className="dropdown-menu" aria-labelledby="topnav-advanced-ui">
-                                            <a href="khachhang.html" className="dropdown-item">Khách hàng</a>
+                                            <Link to="/khach-hang" className="dropdown-item">Khách hàng</Link>
+                                            <Link to="/doi-tac-giao-hang" className="dropdown-item">Nhà vận chuyển</Link>
                                         </div>
                                     </li>
                                     <li className="nav-item dropdown">
                                         <a className="nav-link dropdown-toggle arrow-none" href="#" id="topnav-pages" role="button">
-                                            <i className="dripicons-wallet me-2" />Pages
+                                        <i className="far fa-user" /> Nhân viên
                                             <div className="arrow-down" />
                                         </a>
                                         <div className="dropdown-menu mega-dropdown-menu dropdown-mega-menu-lg  dropdown-menu-end" aria-labelledby="topnav-pages">
@@ -349,7 +345,7 @@ const Header = () => {
                                     </li>
                                     <li className="nav-item dropdown">
                                         <a className="nav-link dropdown-toggle arrow-none" href="#" id="topnav-layout" role="button">
-                                            <i className="dripicons-inbox me-2" />Layouts <div className="arrow-down" />
+                                            <i className="dripicons-inbox me-2" />Sổ quỹ <div className="arrow-down" />
                                         </a>
                                         <div className="dropdown-menu" aria-labelledby="topnav-layout">
                                             <div className="dropdown">
@@ -377,6 +373,15 @@ const Header = () => {
                                                         Width</a>
                                                 </div>
                                             </div>
+                                        </div>
+                                    </li>
+                                    <li className="nav-item dropdown">
+                                        <a className="nav-link dropdown-toggle arrow-none" href="#" id="topnav-advanced-ui" role="button">
+                                            <i className="fas fa-chart-bar" /> Báo cáo
+                                            <div className="arrow-down" />
+                                        </a>
+                                        <div className="dropdown-menu" aria-labelledby="topnav-advanced-ui">
+                                            <a href="khachhang.html" className="dropdown-item">Khách hàng</a>
                                         </div>
                                     </li>
                                 </ul>

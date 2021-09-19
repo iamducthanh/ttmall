@@ -1,6 +1,7 @@
 import React from 'react'
-import Header from '../component/Header'
-import RightBar from '../component/RightBar'
+import Footer from '../commons/Footer'
+import Header from '../commons/Header'
+import RightBar from '../commons/RightBar'
 
 const AdminLayout = (props) => {
     return (
@@ -9,23 +10,14 @@ const AdminLayout = (props) => {
                 <div id="status">
                     <div className="spinner" />
                 </div>
-
             </div>
             <div id="layout-wrapper">
                 <Header></Header>
                 <div className="main-content">
                     {props.children}
-                    <footer className="footer text-center">
-                        ©
-                        Foxia <span className="d-none d-sm-inline-block">
-                            - Crafted with <i className="mdi mdi-heart text-danger" /> by Themesbrand.</span>
-                    </footer>
-
+                    <Footer/>
                 </div>
-
             </div>
-
-
             <RightBar></RightBar>
             <div className="rightbar-overlay" />
         </div>
