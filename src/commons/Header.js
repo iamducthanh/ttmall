@@ -309,7 +309,8 @@ const Header = () => {
                                         </a>
                                         <div className="dropdown-menu" aria-labelledby="topnav-advanced-ui">
                                             <Link to="/khach-hang" className="dropdown-item">Khách hàng</Link>
-                                            <Link to="/doi-tac-giao-hang" className="dropdown-item">Nhà vận chuyển</Link>
+                                            <Link to="/doi-tac-giao-hang" className="dropdown-item">Đối tác giao hàng</Link>
+                                            <Link to="/nha-cung-cap" className="dropdown-item">Nhà cung cấp</Link>
                                         </div>
                                     </li>
                                     <li className="nav-item dropdown">
